@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <h1>This is Home page</h1>
+    <h4>{{lst | join:'-'}}</h4>
+    <h4>{{date | date:'d D M Y'}}</h4>
+    <h4>{{profession | default:'nothing is here'}}</h4>
+    <h4>{{age | add:'5'}}</h4>
+    <h4>{{name | capfirst}}</h4>
+    <h4>{{sentence | cut:" "}}</h4>
+    <h4>{{course | dictsort:'name'}}</h4>
+    <h4>{{lst | first}}</h4>
+    <h4>{{lst | last}}</h4>
+    <h4>{{sentence | length}}</h4>
+    <h4>{{sentence | linenumbers}}</h4>
+    <h4>{{sentence | lower}}</h4>
+    <h4>{{sentence | upper}}</h4>
+    <h4>{{sentence | title}}</h4>
+    <h4>{{lst | random}}</h4>
+    <h4>{{lst | slice:':2'}}</h4>
+    <h4>{{date | time:'H\h i\m'}}</h4>
+    <h4>{{sentence | truncatechars:6}}</h4>
+    <h4>{{sentence | truncatewords:2}}</h4>
+    <h4>{{sentence | wordcount}}</h4>
+    <h4>{{sentence | make_list}}</h4>
+
+</body>
+</html>
